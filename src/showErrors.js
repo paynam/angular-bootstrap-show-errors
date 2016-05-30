@@ -47,6 +47,7 @@
           return toggleClasses(invalid);
         });
         scope.$on('show-errors-check-validity', function() {
+          blurred = true;
           return toggleClasses(formCtrl[inputName].$invalid);
         });
         scope.$on('show-errors-reset', function() {
